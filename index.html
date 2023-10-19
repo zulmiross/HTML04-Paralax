@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML04 - Paralax CSS</title>
+
+    <style type="text/css">
+        body,
+        html {
+            margin: 0;
+            height: 100%;
+            font: 1rem "Lato", sans-serif;
+        }
+
+        .content {
+            background: #fff;
+            color: #777;
+            padding: 35px;
+            text-align: justify;
+            box-shadow: #00000087 10px 20px 25px;           
+        }
+
+        .content h3 {
+            text-align: center;
+        }
+
+        /* Efeito Parallax  */
+        .parallax1,
+        .parallax2,
+        .parallax3,
+        .parallax4 {
+            height: 100%;
+            /* border:2px solid red;  */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            opacity: .7;
+            position: relative;
+        }        
+        
+        .parallax1 {
+            background-image: url(./images/imagem1.jpg);
+        }
+
+        .parallax2 {
+            background-image: url(./images/imagem2.jpg);
+        }
+
+        .parallax3 {
+            background-image: url(./images/imagem3.jpg);
+        }
+
+        .parallax4 {
+            background-image: url(./images/imagem4.jpg);
+        }
+
+        
+        .content-title {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100vw;
+            text-align: center;
+        }
+
+        .content-title span.title {
+            text-transform: uppercase;
+            font-weight: bold;
+            background: #d7d7d78e;
+            padding: 20px 18px;
+            letter-spacing: 5px;
+            transition: ease-in-out .1s;
+            cursor: pointer;
+        }
+
+        span.title:hover {
+            color: #fff;
+            background: #d7d7d7;
+            text-shadow: 2px 0px 20px #000;
+
+        }
+
+        /* Customizando o Scrool Bar  */
+        html ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        html ::-webkit-scrollbar-thumb {
+            background: #777676;
+        }
+
+        html ::-webkit-scrollbar-track {
+            background: #fdfcfc;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="parallax1">
+        <div class="content-title">
+            <span class="title">
+                Passeio com balões
+            </span>
+        </div>
+    </div>
+    <div class="content">
+        <h3>Parallax</h3>
+        <p>What is Lorem Ipsum?
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type
+            specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the
+            1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus PageMaker including
+            versions of Lorem Ipsum.</p>
+    </div>
+    <div class="parallax2">
+        <div class="content-title">
+            <span class="title">
+                Pé na estrada
+            </span>
+        </div>
+    </div>
+    <div class="content">
+        <h3>Parallax</h3>
+        <p>What is Lorem Ipsum?
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type .
+        </p>
+    </div>
+    <div class="parallax3">
+        <div class="content-title">
+            <span class="title">
+                Lindas paisagens
+            </span>
+        </div>
+    </div>
+    <div class="parallax4">
+        <div class="content-title">
+            <span class="title">
+                Pôr-do-Sol nas montanhas
+            </span>
+        </div>
+    </div>
+
+</body>
+
+</html>
